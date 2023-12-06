@@ -1,22 +1,25 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
-.grid-container{
+.grid-container {
     display: grid;
     grid-template-columns: 10vw 10vw 10vw 20vw 50vw;
     grid-template-rows: 20vh 55vh 25vh;
 }
-.item1, .item3, .item4{
+
+.item1,
+.item3,
+.item4 {
     grid-column: 1 / span 4;
 }
 
-.item1{
+.item1 {
     grid-row: 1;
 }
 
-.item2{
+.item2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,16 +31,16 @@ body{
     animation-iteration-count: infinite;
 }
 
-.item3{
+.item3 {
     grid-row: 2;
-    color: yellow;
+    color: #FFFF00;
 }
 
-.item4{
+.item4 {
     grid-row: 3;
 }
 
-.phone{
+.phone {
     margin: 16px;
     width: 367px;
     height: 699px;
@@ -45,20 +48,37 @@ body{
     animation-name: phone;
     animation: phone 1s linear infinite;
 }
-.cup{
+
+.phone:hover {
+    animation: phone 0.1ms linear infinite;
+    width: 200%;
+    filter: blur(100px);
+}
+
+.cup {
+    width: 40px;
     margin-top: 3%;
     margin-left: 10%;
 }
 
-.cup:hover{
-    background-color: #d8e4df;
+.cup:hover {
+    transform: scale(0);
 }
 
-.header{
+h1 {
     font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    font-size: 28px;
+    line-height: 34px;
+    max-width: 360px;
     margin-left: 10%;
+    -moz-transform: scale(1, -1);
+    -webkit-transform: scale(1, -1);
+    -o-transform: scale(1, -1);
+    -ms-transform: scale(1, -1);
+    transform: scale(1, -1);
 }
-.paragraaf{
+
+p {
     font-size: 16px;
     line-height: 24px;
     font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
@@ -66,109 +86,157 @@ body{
     margin-right: 20%;
 }
 
-.container{
+.container {
     margin-left: 10%;
 }
-.sipnews{
-    color: #999;
+
+.sipnews {
+    color: #CCFFCC;
     font-size: 14px;
-    
+
     font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
     margin-left: 10%;
     margin-right: 10%;
 }
+
+.download {
+    width: 140px;
+    height: auto;
+}
+
 /* popup */
-.open-button{
+.open-button {
     border: none;
     background-color: white;
     cursor: pointer;
 }
 
-.form-popup{
+.form-popup {
     display: none;
     position: absolute;
     top: 30%;
     left: 40%;
     right: 40%;
     bottom: 40%;
-    background-size: 367px 699px;
-    bottom: 0;
     z-index: 9;
-  }
+}
 
 
 .form-container {
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    border-radius: 5px;
     max-width: 300px;
     padding: 10px;
-    background-color: rgb(136, 127, 127)
-  }
-  
-  .form-container input[type=text], .form-container input[type=password] {
+    background-color: rgb(136, 127, 127);
+    animation-name: background-red;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+.form-container h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.form-container input[type=text],
+.form-container input[type=password] {
     width: 100%;
-    padding: 15px;
+    padding: 15px 0px;
     margin: 5px 0 22px 0;
     border: none;
     background: #f1f1f1;
-  }
-  
-  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+}
+
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {
     background-color: #ddd;
     outline: none;
-  }
-  
-  .form-container .btn {
+}
+
+.form-container .btn {
     background-color: red;
     color: white;
     padding: 16px 20px;
     border: none;
     cursor: pointer;
     width: 100%;
-    margin-bottom:10px;
+    margin-bottom: 10px;
     opacity: 0.8;
-  }
-  
-  .form-container .cancel {
+}
+
+.form-container .cancel {
     background-color: #04AA6D;
     width: 1%;
     height: 1%;
     font-size: 10px;
     margin: auto;
-  }
-  
-  .form-container .btn:hover, .open-button:hover {
+}
+
+.form-container .btn:hover,
+.open-button:hover {
     opacity: 1;
-  }
+}
 
-  /* end popup */
+/* end popup */
 
-  @keyframes phone
-  {from { transform: rotate(0deg) }
-   to { transform: rotate(800deg) }
-  }
+@keyframes phone {
+    from {
+        transform: rotate(0deg)
+    }
 
-  @keyframes background-red {
-    0%   {background-color:red; }
-    15% {background-color:rgb(255, 174, 0); }
-    30%  {background-color:yellow; }
-    45%  {background-color:rgb(30, 255, 0); }
-    60%  {background-color:rgb(0, 113, 128); }
-    75% {background-color:rgb(153, 0, 255); }
-    90% {background-color:rgb(255, 0, 191); }
-    100% {background-color:rgb(255, 0, 0); }
-  }
+    to {
+        transform: rotate(800deg)
+    }
+}
+
+@keyframes background-red {
+    0% {
+        background-color: red;
+    }
+
+    15% {
+        background-color: rgb(255, 174, 0);
+    }
+
+    30% {
+        background-color: yellow;
+    }
+
+    45% {
+        background-color: rgb(30, 255, 0);
+    }
+
+    60% {
+        background-color: rgb(0, 113, 128);
+    }
+
+    75% {
+        background-color: rgb(153, 0, 255);
+    }
+
+    90% {
+        background-color: rgb(255, 0, 191);
+    }
+
+    100% {
+        background-color: rgb(255, 0, 0);
+    }
+}
 
 @media only screen and (max-width: 600px) {
-    .phone{
-    width: 200px;
-    height: 400px;
+    .phone {
+        width: 200px;
+        height: 400px;
     }
-    .grid-container{
+
+    .grid-container {
         display: grid;
         grid-template-columns: 10vw 10vw 10vw 20vw 50vw;
         grid-template-rows: 3vh 89vh 8vh;
     }
-.download{
-    width: 150px;
-    height: 60px;
-}
+
+    .download {
+        width: 150px;
+        height: 60px;
+    }
 }
