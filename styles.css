@@ -87,7 +87,7 @@ p {
 }
 
 .container {
-    margin-left: 10%;
+    margin-left: 9%;
 }
 
 .sipnews {
@@ -107,8 +107,8 @@ p {
 /* popup */
 .open-button {
     border: none;
-    background-color: white;
     cursor: pointer;
+    background: none;
 }
 
 .form-popup {
@@ -127,7 +127,6 @@ p {
     border-radius: 5px;
     max-width: 300px;
     padding: 10px;
-    background-color: rgb(136, 127, 127);
     animation-name: background-red;
     animation-duration: 8s;
     animation-iteration-count: infinite;
@@ -144,32 +143,21 @@ p {
     padding: 15px 0px;
     margin: 5px 0 22px 0;
     border: none;
-    background: #f1f1f1;
 }
 
 .form-container input[type=text]:focus,
 .form-container input[type=password]:focus {
-    background-color: #ddd;
     outline: none;
 }
 
 .form-container .btn {
     background-color: red;
-    color: white;
     padding: 16px 20px;
     border: none;
     cursor: pointer;
     width: 100%;
     margin-bottom: 10px;
     opacity: 0.8;
-}
-
-.form-container .cancel {
-    background-color: #04AA6D;
-    width: 1%;
-    height: 1%;
-    font-size: 10px;
-    margin: auto;
 }
 
 .form-container .btn:hover,
@@ -236,7 +224,7 @@ p {
     }
 
     .download {
-        width: 150px;
-        height: 60px;
+        width: 140px;
+        height: auto;
     }
 }
