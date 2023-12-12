@@ -53,7 +53,7 @@ body {
 
 .phone:hover {
     animation: phone 0.1ms linear infinite;
-    width: 200%;
+    width: 10px;
     filter: blur(100px);
 }
 
