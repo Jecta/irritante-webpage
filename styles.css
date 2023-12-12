@@ -48,6 +48,7 @@ body {
     background-size: 367px 699px;
     animation-name: phone;
     animation: phone 1s linear infinite;
+    cursor: pointer;
 }
 
 .phone:hover {
@@ -60,6 +61,7 @@ body {
     width: 40px;
     margin-top: 3%;
     margin-left: 10%;
+    cursor: pointer;
 }
 
 .cup:hover {
@@ -77,6 +79,7 @@ h1 {
     -o-transform: scale(1, -1);
     -ms-transform: scale(1, -1);
     transform: scale(1, -1);
+    cursor: pointer;
 }
 
 p {
@@ -85,6 +88,7 @@ p {
     font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
     margin-left: 10%;
     margin-right: 20%;
+    cursor: pointer;
 }
 
 .container {
@@ -98,6 +102,7 @@ p {
     font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
     margin-left: 10%;
     margin-right: 10%;
+    cursor: pointer;
 }
 
 .download {
@@ -108,7 +113,7 @@ p {
 /* popup */
 .open-button {
     border: none;
-    cursor: pointer;
+    cursor: text;
     background: none;
 }
 
