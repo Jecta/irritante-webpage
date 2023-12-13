@@ -39,16 +39,7 @@ body {
     width: 367px;
     height: 699px;
     background-size: 367px 699px;
-    animation-name: phone;
-    animation: phone 0.5s linear infinite;
-    animation-delay: 1.5s;
     cursor: pointer;
-}
-
-.phone:hover {
-    animation: phone 0.1ms linear infinite;
-    width: 10px;
-    filter: blur(50px);
 }
 
 .logo {
