@@ -19,7 +19,7 @@ body {
     grid-column: 5;
     grid-row: 1 / span 3;
     animation-name: background-anim;
-    animation-delay: 2s;
+    animation-delay: 1s;
     animation-duration: 5s;
     animation-iteration-count: infinite;
 }
@@ -27,7 +27,11 @@ body {
 .item3 {
     grid-column: 1 / span 4;
     grid-row: 2;
-    color: #FFFF00;
+    color: #000000;
+    animation-name: yellowtext;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 
 .phone {
@@ -36,14 +40,15 @@ body {
     height: 699px;
     background-size: 367px 699px;
     animation-name: phone;
-    animation: phone 1s linear infinite;
+    animation: phone 0.5s linear infinite;
+    animation-delay: 1.5s;
     cursor: pointer;
 }
 
 .phone:hover {
     animation: phone 0.1ms linear infinite;
     width: 10px;
-    filter: blur(100px);
+    filter: blur(50px);
 }
 
 .logo {
@@ -54,7 +59,7 @@ body {
 }
 
 .logo:hover {
-    transform: scale(0);
+    filter: opacity(0%);
 }
 
 h1 {
@@ -62,12 +67,11 @@ h1 {
     line-height: 34px;
     max-width: 360px;
     margin-left: 10%;
-    -moz-transform: scale(1, -1);
-    -webkit-transform: scale(1, -1);
-    -o-transform: scale(1, -1);
-    -ms-transform: scale(1, -1);
-    transform: scale(1, -1);
     cursor: pointer;
+    animation-name: fliph1;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
 }
 
 p {
@@ -83,11 +87,15 @@ p {
 }
 
 .sipnews {
-    color: #CCFFCC;
+    color: #000000;
     font-size: 14px;
     margin-left: 10%;
     margin-right: 10%;
     cursor: pointer;
+    animation-name: greentext;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 
 .download {
@@ -146,6 +154,16 @@ label {
 
 /* end popup */
 
+@keyframes fliph1 {
+    to {
+        -moz-transform: scale(1, -1);
+        -webkit-transform: scale(1, -1);
+        -o-transform: scale(1, -1);
+        -ms-transform: scale(1, -1);
+        transform: scale(1, -1);
+    }
+}
+
 @keyframes phone {
     from {
         transform: rotate(0deg)
@@ -153,6 +171,26 @@ label {
 
     to {
         transform: rotate(800deg)
+    }
+}
+
+@keyframes yellowtext {
+    0% {
+        color: #000000;
+    }
+
+    100% {
+        color: #FFFF00;
+    }
+}
+
+@keyframes greentext {
+    0% {
+        color: #000000;
+    }
+
+    100% {
+        color: #CCFFCC;
     }
 }
 
@@ -202,8 +240,8 @@ label {
     }
 
     .phone {
-        width: 200px;
-        height: 400px;
+        width: 150px;
+        height: auto;
     }
 
     .grid-container {
