@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
 }
 
 .grid-container {
@@ -10,35 +11,23 @@ body {
     grid-template-rows: 20vh 55vh 25vh;
 }
 
-.item1,
-.item3,
-.item4 {
-    grid-column: 1 / span 4;
-}
-
-.item1 {
-    grid-row: 1;
-}
-
 .item2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(219, 67, 67);
+    background-color: #d51846;
     grid-column: 5;
     grid-row: 1 / span 3;
-    animation-name: background-red;
-    animation-duration: 8s;
+    animation-name: background-anim;
+    animation-delay: 2s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
 }
 
 .item3 {
+    grid-column: 1 / span 4;
     grid-row: 2;
     color: #FFFF00;
-}
-
-.item4 {
-    grid-row: 3;
 }
 
 .phone {
@@ -57,19 +46,18 @@ body {
     filter: blur(100px);
 }
 
-.cup {
+.logo {
     width: 40px;
     margin-top: 3%;
     margin-left: 10%;
     cursor: pointer;
 }
 
-.cup:hover {
+.logo:hover {
     transform: scale(0);
 }
 
 h1 {
-    font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
     font-size: 28px;
     line-height: 34px;
     max-width: 360px;
@@ -85,21 +73,18 @@ h1 {
 p {
     font-size: 16px;
     line-height: 24px;
-    font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
     margin-left: 10%;
     margin-right: 20%;
     cursor: pointer;
 }
 
-.container {
+.row {
     margin-left: 9%;
 }
 
 .sipnews {
     color: #CCFFCC;
     font-size: 14px;
-
-    font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
     margin-left: 10%;
     margin-right: 10%;
     cursor: pointer;
@@ -108,14 +93,10 @@ p {
 .download {
     width: 140px;
     height: auto;
+    cursor: text;
 }
 
 /* popup */
-.open-button {
-    border: none;
-    cursor: text;
-    background: none;
-}
 
 .form-popup {
     display: none;
@@ -129,12 +110,11 @@ p {
 
 
 .form-container {
-    font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
     border-radius: 5px;
     min-width: 300px;
     padding: 10px;
-    animation-name: background-red;
-    animation-duration: 8s;
+    animation-name: background-anim;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
 }
 
@@ -143,17 +123,11 @@ p {
     padding: 0;
 }
 
-.form-container input[type=text],
-.form-container input[type=password] {
+input {
     width: 100%;
     padding: 15px 0px;
     margin: 5px 0 22px 0;
     border: none;
-}
-
-.form-container input[type=text]:focus,
-.form-container input[type=password]:focus {
-    outline: none;
 }
 
 .form-container .btn {
@@ -166,9 +140,8 @@ p {
     opacity: 0.8;
 }
 
-.form-container .btn:hover,
-.open-button:hover {
-    opacity: 1;
+label {
+    font-weight: bold;
 }
 
 /* end popup */
@@ -183,9 +156,9 @@ p {
     }
 }
 
-@keyframes background-red {
+@keyframes background-anim {
     0% {
-        background-color: red;
+        background-color: #d51846;
     }
 
     15% {

@@ -11,60 +11,55 @@
 
 <body>
     <div class="grid-container">
-        <div class="grid-item item1"></div>
         <div class="grid-item item2"><img class="phone" src="assets/iphone.png"></div>
-        <div class="grid-item item3"><img class="cup" src="assets/logo.svg">
-            <h1><b>Daily tappable tech new and stories</b></h1>
+        <div class="grid-item item3"><img class="logo" src="assets/logo.svg">
+            <h1>Daily tappable tech new and stories</h1>
             <p>Every weekday Sip surfaces the most interesting and important tech stories of the day,
                 from breaking news to profiles on favorite tech products.</p>
             <br>
-            <div class="container">
-                <button
-                        class="open-button" onclick="openForm()"><img class="download ios"
-                            src="assets/download-ios.svg"></button>
-                <button
-                        class="open-button" onclick="openform()"><img class="download android"
-                            src="assets/download-android.svg"></button>
+            <div class="row">
+                <a onclick="openForm()"><img class="download ios"
+                        src="assets/download-ios.svg"></a>
+                <a onclick="openform()"><img class="download android"
+                        src="assets/download-android.svg"></a>
             </div>
             <br>
             <br>
             <p class="sipnews">Sip News is built by Product Hunt and its awesome community.</p>
         </div>
 
-        <!-- popup -->
+        <!-- App Store Popup -->
         <div class="form-popup" id="myForm">
-            <form action="https://play.google.com/store/apps/details?id=com.producthunt.sip&pcampaignid=web_share"  class="form-container">
+            <form action="https://play.google.com/store/apps/details?id=com.producthunt.sip&pcampaignid=web_share"
+                class="form-container">
                 <h1>please log in before continuing</h1><br>
 
                 <label for="email"><b>Email</b></label>
                 <input type="password" placeholder="Enter Email" name="email" required>
 
                 <label for="psw"><b>Password</b></label>
-                <input type="text" placeholder="Enter Password" name="psw" required>
+                <input type="email" placeholder="Enter Password" name="psw" required>
 
                 <button class="btn">Continue</button>
             </form>
-            <script src="javascript.js"></script>
         </div>
 
-        <!-- google -->
+        <!-- Google Play Popup -->
         <div class="form-popup" id="myform">
             <form action="https://itunes.apple.com/us/app/sip-stories/id1324722847" class="form-container">
                 <h1>please log in before continuing</h1><br>
 
-                <label for="email"><b>Email</b></label>
+                <label for="email">Email</label>
                 <input type="password" placeholder="Enter Email" name="email" required>
 
-                <label for="psw"><b>Password</b></label>
-                <input type="text" placeholder="Enter Password" name="psw" required>
-
+                <label for="psw">Password</label>
+                <input type="email" placeholder="Enter Password" name="psw" required>
                 <button class="btn">Continue</button>
             </form>
-            <script src="javascript.js"></script>
         </div>
         <!-- end popup -->
     </div>
-    <div class="grid-item item4"></div>
+    <script src="javascript.js"></script>
 </body>
 
 </html>
