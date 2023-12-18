@@ -1,13 +1,9 @@
-function openForm() {
+function iosPopup() {
   document.getElementById("myForm").style.display = "block";
 }
 
-function openform() {
+function androidPopup() {
   document.getElementById("myform").style.display = "block";
-}
-
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
 }
 
 let rickroll = "https://variety.com/wp-content/uploads/2021/07/Rick-Astley-Never-Gonna-Give-You-Up.png";
