@@ -28,10 +28,6 @@ body {
     background-color: #d51846;
     grid-column: 5;
     grid-row: 1 / span 3;
-    animation-name: background-anim;
-    animation-delay: 1s;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
 }
 
 .phone {
@@ -141,7 +137,6 @@ label {
     font-weight: bold;
 }
 
-/* End Popup */
 @keyframes fliph1 {
     to {
         -moz-transform: scale(1, -1);
@@ -149,16 +144,6 @@ label {
         -o-transform: scale(1, -1);
         -ms-transform: scale(1, -1);
         transform: scale(1, -1);
-    }
-}
-
-@keyframes phone {
-    from {
-        transform: rotate(0deg)
-    }
-
-    to {
-        transform: rotate(800deg)
     }
 }
 
@@ -179,40 +164,6 @@ label {
 
     100% {
         color: #CCFFCC;
-    }
-}
-
-@keyframes background-anim {
-    0% {
-        background-color: #d51846;
-    }
-
-    15% {
-        background-color: rgb(255, 174, 0);
-    }
-
-    30% {
-        background-color: yellow;
-    }
-
-    45% {
-        background-color: rgb(30, 255, 0);
-    }
-
-    60% {
-        background-color: rgb(0, 113, 128);
-    }
-
-    75% {
-        background-color: rgb(153, 0, 255);
-    }
-
-    90% {
-        background-color: rgb(255, 0, 191);
-    }
-
-    100% {
-        background-color: rgb(255, 0, 0);
     }
 }
 
