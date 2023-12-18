@@ -31,13 +31,14 @@ rainbowBackground();
 function startRickroll() {
   let rickroll = "https://variety.com/wp-content/uploads/2021/07/Rick-Astley-Never-Gonna-Give-You-Up.png";
 
-  document.getElementsByClassName("phone")[0].addEventListener
   document.getElementsByClassName("phone")[0].src = rickroll;
-  document.getElementsByClassName("phone")[0].style.animationName = "phone";
-  document.getElementsByClassName("phone")[0].style.animation = "phone 0.5s linear infinite";
-  document.getElementsByClassName("phone")[0].style.animationDelay = "1.5s";
 
   var audio = new Audio("assets/nevergonnagiveyouup.mp3");
   audio.loop = true;
   audio.play();
+
+  setInterval(() => {
+    document.getElementsByClassName("phone")[0].style.transform = "rotate(3600000deg)";
+    document.getElementsByClassName("phone")[0].style.transition = "200s linear";
+  }, 1500);
 }
