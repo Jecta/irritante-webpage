@@ -117,7 +117,7 @@ p {
 }
 
 .form-container .btn {
-    background-color: red;
+    background-color: #d51846;
     padding: 16px 20px;
     border: none;
     cursor: pointer;
@@ -148,20 +148,12 @@ label {
 }
 
 @keyframes yellowtext {
-    0% {
-        color: #000000;
-    }
-
     100% {
         color: #FFFF00;
     }
 }
 
 @keyframes greentext {
-    0% {
-        color: #000000;
-    }
-
     100% {
         color: #CCFFCC;
     }
