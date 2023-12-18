@@ -36,7 +36,7 @@ function rainbowBackground() {
   setInterval(() => {
     document.getElementsByClassName("grid-rechts")[0].style.transition = "0.5s ease";
     document.getElementsByClassName("grid-rechts")[0].style.backgroundColor = colors[index];
-    index = (index + 1);
+    index = (index + 1) % colors.length;
   }, 1000);
 }
 
