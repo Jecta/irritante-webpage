@@ -11,7 +11,17 @@ body {
     grid-template-rows: 20vh 55vh 25vh;
 }
 
-.item2 {
+.grid-links {
+    grid-column: 1 / span 4;
+    grid-row: 2;
+    color: #000000;
+    animation-name: yellowtext;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.grid-rechts {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,16 +32,6 @@ body {
     animation-delay: 1s;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-}
-
-.item3 {
-    grid-column: 1 / span 4;
-    grid-row: 2;
-    color: #000000;
-    animation-name: yellowtext;
-    animation-duration: 3s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
 }
 
 .phone {
@@ -77,6 +77,12 @@ p {
     margin-left: 9%;
 }
 
+.download {
+    width: 140px;
+    height: auto;
+    cursor: text;
+}
+
 .sipnews {
     color: #000000;
     font-size: 14px;
@@ -89,14 +95,7 @@ p {
     animation-fill-mode: forwards;
 }
 
-.download {
-    width: 140px;
-    height: auto;
-    cursor: text;
-}
-
-/* popup */
-
+/* Login Popup */
 .form-popup {
     display: none;
     position: absolute;

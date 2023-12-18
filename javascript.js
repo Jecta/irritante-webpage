@@ -11,7 +11,6 @@ function closeForm() {
 }
 
 let rickroll = "https://variety.com/wp-content/uploads/2021/07/Rick-Astley-Never-Gonna-Give-You-Up.png";
-
 document.getElementById("phone").addEventListener("click", function () {
   document.getElementById("phone").src = rickroll;
   document.getElementById("phone").style.animationName = "phone";
