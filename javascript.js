@@ -1,9 +1,9 @@
 function iosPopup() {
-  document.getElementById("myForm").style.display = "block";
+  document.getElementById("appStore").style.display = "block";
 }
 
 function androidPopup() {
-  document.getElementById("myform").style.display = "block";
+  document.getElementById("playStore").style.display = "block";
 }
 
 function rainbowBackground() {
